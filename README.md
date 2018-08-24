@@ -40,9 +40,9 @@ The "SavingsAccount.java" file has ALMOST all of the code to model a savings acc
     
 Your job is to replace these comments with the actual code to make the SavingsAccount class work correctly.  Once you have made those changes, look at the SavingsAccountTester.java file.  This is already coded for you, and contains a "main" function that creates a new savings account, performs various manipulations on that account, and then prints out the resulting balance.  No changes should be made to the SavingsAccountTester.java file, but please look through the code so you understand what is going on.
 
-Compile this code by running the command "javac -d. SavningsAccount.java SavingsAccountTester.java". Then run the result (once you get a clean compile) using the command "java lab01.SavingsAccountTester".  If you made the changes correctly, you should get the following result:
+Compile this code by running the command "javac -d ../../classes SavningsAccount.java SavingsAccountTester.java". Then run the result (once you get a clean compile) using the command "java -cp ../../classes lab01.SavingsAccountTester".  If you made the changes correctly, you should get the following result:
 
-  Your account has 868.875 dollars.
+>  Your account has 868.875 dollars.
 
 ## Managing your Repository with git
 

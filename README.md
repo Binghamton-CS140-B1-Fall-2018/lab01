@@ -18,7 +18,7 @@ To compile the Hello.java program, use the command:
 
 >  javac -d ../../classes Hello.java
 
-Note that the Hello.java file has a statement on the first line that says "package lab01;". This causes the Hello.java file to be in the "lab01" package. When you compile, the "-d ../../classes" parameter tells the compiler to put the binary .class file in the lab01 package directory starting at the parent of the parent of the current directory. Remember that the current directory is "cs140/src/lab01", so the parent of the parent of the current directory is "cs140/classes". Since the Hello class is in the lab01 package, that means the compiler will create "cs140/classes/lab01/Hello.class".) Use the UNIX "ls" command to verify that you have created the class file in the expected directory.
+Note that the Hello.java file has a statement on the first line that says "package lab01;". This causes the Hello.java file to be in the "lab01" package. When you compile, the "-d ../../classes" parameter tells the compiler to put the binary .class file in the lab01 package directory starting at the parent of the parent of the current directory. Remember that the current directory is "cs140/src/lab01", so the parent of the parent of the current directory is "cs140", so we are telling the compiler to put the class files in "cs140/classes". Since the Hello class is in the lab01 package, that means the compiler will create "cs140/classes/lab01/Hello.class".) Use the UNIX "ls" command to verify that you have created the class file in the expected directory.
 
 Now, you can run the main method in the Hello class (in the lab01 package) by running the command:
 

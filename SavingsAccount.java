@@ -16,8 +16,8 @@ public class SavingsAccount {
 	 *  - Interest - the percent interest earned in one year
 	 */
 
-	double balance;
-	double interest;
+	private double balance;
+	private double interest;
 
 	/**
 	 * Create a new savings account

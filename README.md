@@ -42,19 +42,16 @@ Your job is to replace these comments with the actual code to make the SavingsAc
 
 If you are familiar with Python, there are a couple of important differences to remember when coding in Java:
 1. In Java, every variable and field must be *declared* before it is used. You didn't need to do that in Python. When you declare a variable or field in Java, you must specify what kind of data is in that variable. For the purposes of this program, the only two types of fields or variables we will be working with are "int" for whole numbered integers, and "double" for double precision decimal numbers.
-2. In Java, you group a block of statements together by enclosing that group in curly braces. For example:
-  ```java
-  if (a>b) {
-    max=a;
-    System.out.println("a was greater than b");
-  }
-  ```
-   In Python, a block of statements is controlled by indentation. The Java compiler does not care about indentation.
-Once you have made those changes, look at the SavingsAccountTester.java file.  This is already coded for you, and contains a "main" function that creates a new savings account, performs various manipulations on that account, and then prints out the resulting balance.  No changes should be made to the SavingsAccountTester.java file, but please look through the code so you understand what is going on.
-
+2. In Python, a block of statements is controlled by indentation. The Java compiler does not care about indentation. In Java, you group a block of statements together by enclosing that group in curly braces.  For example:
+ ```java  
+if (a>b) {  
+  max=a;  
+  System.out.println("a was greater than b");  
+}
+```  
 For more Java vs. Python comparisons, see (http://www.cs.binghamton.edu/~tbartens/CS140_Fall_2018/Library/python%20vs.%20java.html "Python vs. Java").
 
-I have also provided a class called SavingsAccountTester (defined in SavingsAccountTester.java) which creates a SavingsAccount object and performs several actions on that object. Take a look at that code and see how to create a new object using the "new" keyword, and then manipulate the data in those objects. However, you don't need to change anything in this file.
+I have also provided a class called SavingsAccountTester (defined in SavingsAccountTester.java) which has a *main* method which creates a SavingsAccount object and performs several actions on that object. Take a look at that code and see how to create a new object using the "new" keyword, and then manipulate the data in those objects. However, you don't need to change anything in this file.
 
 Once you have fixed the SavingsAccount.java code, compile the code by running the command "javac -d ../../classes SavningsAccount.java SavingsAccountTester.java". Then run the result (once you get a clean compile) using the command "java -cp ../../classes lab01.SavingsAccountTester".  If you made the changes correctly, you should get the following result:
 
@@ -64,13 +61,13 @@ Once you have fixed the SavingsAccount.java code, compile the code by running th
 
 Your code will reside in a git repository. In order to update that repository, when you want to save your changes, you should "commit" those changes to the repository.  When you do so, you should add a comment to keep track of the changes you have made.  For instance, in the cs140/labs/lab01-*userid* directory, you could use the command:
 
->  git commit -m "Fixed SavingsAccount first TODO"
+`git commit -m "Fixed SavingsAccount first TODO"`
   
  Once you commit your changes, you can also to run the command:
  
->  git push
+`git push`
   
-This command actually copies you changes to the "cloud" so that they are available to you on a different machine.  From another machine, you can clone your repository again to get a copy on the second machine. On the second machine you can do commits and pushes as well, which will make the repository on your first machine out of date.  But if you do a "git pull" on the first machine in the repository directory, it will retreive all the changes made from the second machine, and get everything synchronized again.
+This command actually copies you changes to the "cloud" so that they are available to you on a different machine.  From another machine, you can clone your repository again to get a copy on the second machine. On the second machine you can do commits and pushes as well, which will make the repository on your first machine out of date.  But if you do a `git pull` on the first machine in the repository directory, it will retreive all the changes made from the second machine, and get everything synchronized again.
   
 Multiple commits make sense... it's like saving a file in case the system goes down. The more often you commit, the more likely there will be a state you can go back to, before you made a mistake.
   
@@ -78,15 +75,15 @@ Multiple commits make sense... it's like saving a file in case the system goes d
   
 Once you have finished the lab (before midnight tonight) please do a 
 
-  git commit --allow-empty -m "Finshed lab01"
+`git commit --allow-empty -m "Finshed lab01"`
   
-The "--allow-empty" flag allows you to commit and add a new commit comment even if there are no changes to the code itself. Once you have done your final commit, run the command:
+The `--allow-empty` flag allows you to commit and add a new commit comment even if there are no changes to the code itself. Once you have done your final commit, run the command:
 
-  git rev-parse HEAD
+`git rev-parse HEAD`
   
 This will cause the system to print a long hexadecimal number like:
 
-  8680a832fb99f1389d85ecfc715c4c8a291a6d49
+> 8680a832fb99f1389d85ecfc715c4c8a291a6d49
   
 This number is a hash code that uniquely identifies this commit of this repository. If the repository changes in any way, this hash code will change as well. The hash code also gives the CA's the information they need to download that version of your repository and grade it.
 

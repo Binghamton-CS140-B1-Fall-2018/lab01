@@ -53,7 +53,7 @@ For more Java vs. Python comparisons, see [Python vs. Java](http://www.cs.bingha
 
 I have also provided a class called SavingsAccountTester (defined in SavingsAccountTester.java) which has a *main* method which creates a SavingsAccount object and performs several actions on that object. Take a look at that code and see how to create a new object using the "new" keyword, and then manipulate the data in those objects. However, you don't need to change anything in this file.
 
-Once you have fixed the SavingsAccount.java code, compile the code by running the command `javac -d ../../classes SavningsAccount.java SavingsAccountTester.java`. Then run the result (once you get a clean compile) using the command `java -cp ../../classes lab01.SavingsAccountTester`.  If you made the changes correctly, you should get the following result:
+Once you have fixed the SavingsAccount.java code, compile the code by running the command `javac -d ../../classes SavingsAccount.java SavingsAccountTester.java`. Then run the result (once you get a clean compile) using the command `java -cp ../../classes lab01.SavingsAccountTester`.  If you made the changes correctly, you should get the following result:
 
 >  Your account has 868.875 dollars.
 
@@ -61,9 +61,9 @@ Once you have fixed the SavingsAccount.java code, compile the code by running th
 
 The changes to your code now reside in a copy of the lab01-*userid* repository on the hard disk of the Linux machine. In order to update that repository, when you want to save your changes, you should "commit" those changes to the repository.  When you do so, you should add a comment to keep track of the changes you have made.  For instance, in the cs140/labs/lab01-*userid* directory, you could use the command:
 
-`git commit -m "Fixed SavingsAccount first TODO"`
+`git commit -am "Fixed SavingsAccount first TODO"`
   
- :warning: If you add new files to your repository, the git commands get more complicated, but we're ignoring that for now.
+:warning: If you add new files to your repository, the git commands get more complicated, but we're ignoring that for now.
  
  Once you commit your changes, you can also to run the command:
  

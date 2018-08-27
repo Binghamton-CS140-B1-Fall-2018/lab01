@@ -77,7 +77,7 @@ Multiple commits make sense... it's like saving a file in case the system goes d
   
 Once you have finished the lab (before midnight tonight) please do a 
 
-`git commit --allow-empty -m "Finshed lab01"`
+`git commit --allow-empty -am "Finshed lab01"`
   
 The `--allow-empty` flag allows you to commit and add a new commit comment even if there are no changes to the code itself. Once you have done your final commit, run the command:
 

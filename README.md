@@ -1,6 +1,6 @@
-# lab01 - Due Tuesday, August 28 at 11:59 PM
+# lab01 - Due Tuesday, August 27 at 11:59 PM
 
-By accepting this lab, you have made a new git "repository" (basically a collection of files all related to a single topic... in the case, lab01), that is available in the cloud.  Furthermore, git has initialized this repository with code I have provided for you.  The first step in this lab is to copy this repository from the cloud onto your local UNIX machine, a process in gitHub called "cloning" your repository.
+By accepting this lab, you have made a new git "repository" that is available in the cloud.  Furthermore, git has initialized this repository with code I have provided for you.  The first step in this lab is to copy this repository from the cloud onto your local UNIX machine, a process in gitHub called "cloning" your repository.
 
 ## Cloning your Repository
 
@@ -8,7 +8,7 @@ To clone your repository, first find the green button above this README file nam
 
 `git clone <URL from the "Clone or Download" Button>`
   
-When this command finishes, you should be able to do an `ls` to see a "lab01-*userid*" directory.  CD to that directory and do an `ls` to list the files in the directory. You should see several files in the directory.  
+When this command finishes, you should be able to do an `ls` to see a "lab01-*userid*" directory.  "cd" to that directory and do an `ls` to list the files in the directory. You should see several files in the directory.  
 
 ## Compiling and Running your First Java Program
 

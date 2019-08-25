@@ -92,3 +92,13 @@ This number is a hash code that uniquely identifies this commit of this reposito
 To complete your submission, you must copy and paste this hash code into myCourses. Go to myCourses, select CS140-B1, and go to Content-> Lab Submissions. Select lab01, and where it says text submission, paste your commit hash (you may have to click on the "write submission" button to open up a field to paste the hash into). The CAs will only grade your submission that corresponds to the hash you submitted. You can update this as often as you like until the deadline of 11:59 PM this evening.
 
 ⚠️ You MUST submit the commit hash on myCourses before the deadline to be considered on time even if your lab is completely working before the deadline.
+
+## Grading Criteria
+
+This lab is worth a total of 10 points. You will get the full 10 points if the CA's can clone the version of your repository associated with the hash code committed on myCourses, and compile and run the SavingsAcccount and SavingsAccountTester classes with no compiler error messages. The SavingsAccountTester.java file must not be modified, but must print out the correct final balance. Deductions from the full 10 points will occur for the following:
+
+- -5 if SavingsAccountTester.java has been changed.
+- -5 if SavingsAccount.java or SavingsAccountTester.java does not compile.
+- -2 if SavingsAccount.java compiles, but produces warning messages
+- -2 if there are problems with the commit hash code on myCourses
+- -3 per 24 hours for each day the myCourses submission is late.
